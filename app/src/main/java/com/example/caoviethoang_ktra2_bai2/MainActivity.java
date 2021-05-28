@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     thi = false;
                 }
-                loadData();
                 sqLiteHelperLichThi.add(new LichThi(name, date, time, thi));
+                loadData();
             }
         });
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
