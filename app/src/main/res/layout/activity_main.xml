@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchview"/>
+    <EditText
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên môn học"
+        android:id="@+id/edname"/>
+    <EditText
+    android:textSize="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nhập ngày thi"
+    android:id="@+id/eddate"/>
+    <EditText
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập giờ thi"
+        android:id="@+id/edtime"/>
+    <CheckBox
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activate"
+        android:text="kiểm tra viết"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_gravity="center"
+        android:id="@+id/btadd"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getALL"
+        android:layout_gravity="center"
+        android:id="@+id/btall"/>
+    <TextView
+        android:textSize="30dp"
+        android:text="Số lượng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtds"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyleview"
+        android:layout_height="match_parent"/>
+</LinearLayout>
